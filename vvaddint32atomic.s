@@ -1,6 +1,6 @@
 .global vvaddint32atomic
 .type vvaddint32atomic, @function
-vvaddint32atomic:
+vvaddint32atomic: # void(int n, const int* x, const int* y, int* z, int* i)
 fence rw, rw
 lw t0, (a4)
 fence r, rw
