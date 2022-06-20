@@ -1,0 +1,9 @@
+*
+!/.clang-format
+!/.gitignore
+!/configure.sh
+!/LICENSE
+!/main.cpp
+!/Makefile
+!/README.adoc
+!/vvaddint32atomic.s

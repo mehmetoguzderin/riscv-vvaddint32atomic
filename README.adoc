@@ -1,0 +1,6 @@
+= RISC-V Vector-Vector Add Atomic Example
+
+Based on:
+* https://github.com/riscv/riscv-v-spec
+* https://github.com/riscv-software-src/homebrew-riscv
+* https://github.com/riscv-software-src/riscv-tools
