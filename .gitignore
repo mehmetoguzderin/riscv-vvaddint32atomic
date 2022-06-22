@@ -3,6 +3,7 @@
 !/.gitignore
 !/configure.sh
 !/LICENSE
+!/main-mt.c
 !/main.cpp
 !/Makefile
 !/README.adoc

@@ -6,6 +6,10 @@ mkdir third_party
 cd third_party
 git clone --depth 1 --single-branch https://github.com/riscv/riscv-opcodes
 git clone --depth 1 --single-branch https://github.com/riscv-software-src/riscv-isa-sim
+git clone --depth 1 --single-branch https://github.com/riscv-software-src/riscv-tests
+cd riscv-tests
+git submodule update --init --recursive --progress --recommend-shallow --depth 1
+cd ..
 git clone --depth 1 --single-branch https://github.com/riscv-collab/riscv-gnu-toolchain
 cd riscv-gnu-toolchain
 git submodule update --init --recursive --progress --recommend-shallow --depth 1
