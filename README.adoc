@@ -4,9 +4,7 @@
 == Based on
 
 * https://github.com/riscv/riscv-v-spec
+* https://github.com/riscv/riscv-test-env
 * https://github.com/riscv-software-src/homebrew-riscv
+* https://github.com/riscv-software-src/riscv-tests
 * https://github.com/riscv-software-src/riscv-tools
-
-== To do
-
-* Use riscv-tests' benchmarks' proxy kernel for multi-hart exeuction
