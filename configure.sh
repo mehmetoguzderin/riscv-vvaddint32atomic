@@ -63,4 +63,10 @@ cmake --build .
 cmake --build . --target install
 cd ..
 cd ..
-CC=$RISCV/bin/riscv64-unknown-elf-gcc CXX=$RISCV/bin/riscv64-unknown-elf-g++ build_project riscv-pk --prefix=$RISCV --host=riscv64-unknown-elf
+cd riscv-pk
+mkdir build
+../configure --prefix=$RISCV --host=riscv64-unknown-elf --with-arch=rv64imafdcv
+make
+make install
+cd ..
+cd ..
