@@ -4,6 +4,7 @@
 !/configure.sh
 !/LICENSE
 !/main-mt.c
+!/main-mt.S
 !/main.cpp
 !/Makefile
 !/README.adoc
