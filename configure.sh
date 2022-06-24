@@ -16,6 +16,7 @@ git submodule update --init --recursive --progress --recommend-shallow --depth 1
 cd ..
 git clone --depth 1 --single-branch https://github.com/riscv-software-src/riscv-pk
 git clone --depth 1 --single-branch https://github.com/llvm/llvm-project
+git clone --depth 1 --single-branch https://github.com/ucb-bar/libgloss-htif
 export MAKE=`command -v gmake || command -v make`
 export PATH="$RISCV/bin:$PATH"
 set -e
@@ -65,8 +66,16 @@ cd ..
 cd ..
 cd riscv-pk
 mkdir build
+cd build
 ../configure --prefix=$RISCV --host=riscv64-unknown-elf --with-arch=rv64imafdcv
 make
 make install
+cd ..
+cd ..
+cd libgloss-htif
+mkdir build
+cd build
+CC=riscv64-unknown-elf-gcc CXX=riscv64-unknown-elf-g++ ../configure --prefix=$RISCV --host=riscv64-unknown-elf
+make
 cd ..
 cd ..
